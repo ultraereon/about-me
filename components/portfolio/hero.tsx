@@ -12,7 +12,7 @@ export function Hero() {
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Hey there!</p>
 
           <h1 className="mt-4 text-balance text-4xl font-bold uppercase leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            {profile.name} <span className="text-primary">RF</span>
+            {profile.name} <span className="text-primary">//RF</span>
           </h1>
 
           <p className="mt-4 text-lg font-medium uppercase tracking-wide text-muted-foreground sm:text-xl">

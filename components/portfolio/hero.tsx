@@ -90,18 +90,7 @@ export function Hero() {
 function ClientPhoto() {
   return (
     <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
-      {/* soft glow backdrop */}
-      <div
-        aria-hidden="true"
-        className="absolute -inset-6 rounded-t-full bg-gradient-to-b from-primary/30 via-primary/10 to-transparent blur-2xl"
-      />
-      {/* gradient arch behind photo */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 translate-y-3 rounded-t-full bg-gradient-to-b from-primary to-primary/30"
-      />
-      {/* photo clipped to arch / semi-circle */}
-      <div className="relative aspect-[4/5] overflow-hidden rounded-t-full border border-primary/30 bg-secondary">
+      <div className="relative aspect-[4/5] w-full">
         <Image
           src={profileImg}
           alt="Portrait of Mohamed Arif Asharf"

@@ -18,11 +18,7 @@ export const navItems = [
   { id: "education", label: "Education" },
 ] as const
 
-export const stats = [
-  { value: "1st", label: "Best Dept Project 2025" },
-  { value: "5+", label: "Programming Languages" },
-  { value: "2", label: "Apps in Production" },
-] as const
+
 
 export const about = [
   "I'm a highly motivated IT graduate with a relentless drive to innovate and build software that makes a difference. My favorite work lives at the intersection of artificial intelligence and thoughtful product engineering — creating tools that feel genuinely useful.",
@@ -66,6 +62,11 @@ export const projects: Project[] = [
   },
 ]
 
+export const stats = [
+  { value: "1st", label: "Best Dept Project 2025" },
+  { value: "5+", label: "Programming Languages" },
+  { value: projects.length.toString(), label: "Apps in Production" },
+]
 export const skillGroups = [
   {
     label: "Languages",

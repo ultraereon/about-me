@@ -2,6 +2,7 @@ import Image from "next/image"
 import { ArrowRight, Download, Github, Linkedin, Mail, MapPin } from "lucide-react"
 import { profile, stats } from "@/lib/portfolio-data"
 import profileImg from "@/public/mohamed-arif-asharf.jpg"
+import { FadeIn } from "@/components/ui/fade-in"
 
 export function Hero() {
   return (
@@ -9,7 +10,8 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-16 pt-8 md:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-24 lg:pt-12">
         {/* Left: intro */}
         <div className="flex flex-col">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Hey there! I am</p>
+          <FadeIn delay={0}>
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Hey there! I am</p>
 
           <h1 className="mt-4 text-balance text-4xl font-bold uppercase leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             {profile.name} <span className="text-primary">//RF</span>
@@ -21,13 +23,15 @@ export function Hero() {
 
           <p className="mt-5 max-w-md text-pretty leading-relaxed text-muted-foreground">{profile.tagline}</p>
 
-          <div className="mt-5 flex items-center gap-2 text-sm text-muted-foreground">
-            <MapPin className="size-4 text-primary" aria-hidden="true" />
-            <span>{profile.location}</span>
-          </div>
+            <div className="mt-5 flex items-center gap-2 text-sm text-muted-foreground">
+              <MapPin className="size-4 text-primary" aria-hidden="true" />
+              <span>{profile.location}</span>
+            </div>
+          </FadeIn>
 
           {/* Socials */}
-          <ul className="mt-6 flex items-center gap-3" aria-label="Social links">
+          <FadeIn delay={150}>
+            <ul className="mt-6 flex items-center gap-3" aria-label="Social links">
             {[
               { href: profile.socials.github, label: "GitHub", Icon: Github },
               { href: profile.socials.linkedin, label: "LinkedIn", Icon: Linkedin },
@@ -45,10 +49,12 @@ export function Hero() {
                 </a>
               </li>
             ))}
-          </ul>
+            </ul>
+          </FadeIn>
 
           {/* CTAs */}
-          <div className="mt-8 flex flex-wrap items-center gap-3">
+          <FadeIn delay={300}>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#projects"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
@@ -64,10 +70,12 @@ export function Hero() {
               <Download className="size-4" aria-hidden="true" />
               Resume
             </a>
-          </div>
+            </div>
+          </FadeIn>
 
           {/* Stats */}
-          <dl className="mt-12 grid max-w-md grid-cols-3 gap-3">
+          <FadeIn delay={450}>
+            <dl className="mt-12 grid max-w-md grid-cols-3 gap-3">
             {stats.map((stat) => (
               <div key={stat.label} className="rounded-xl border border-border bg-card p-4 text-center">
                 <dt className="sr-only">{stat.label}</dt>
@@ -77,11 +85,14 @@ export function Hero() {
                 </dd>
               </div>
             ))}
-          </dl>
+            </dl>
+          </FadeIn>
         </div>
 
         {/* Right: photo in organic blob */}
-        <ClientPhoto />
+        <FadeIn delay={300} direction="left">
+          <ClientPhoto />
+        </FadeIn>
       </div>
     </section>
   )

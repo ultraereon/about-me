@@ -1,7 +1,9 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import Image from "next/image"
 import { profile, navItems } from "@/lib/portfolio-data"
+import logoImg from "@/public/logo.png"
 import { cn } from "@/lib/utils"
 
 export function TopNav() {
@@ -50,9 +52,15 @@ export function TopNav() {
           className="flex items-center gap-2 outline-none"
           aria-label="Back to top"
         >
-          <span className="flex size-9 items-center justify-center rounded-md bg-primary text-lg font-bold text-primary-foreground">
-            M
-          </span>
+          <div className="relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-md bg-black">
+            <Image 
+              src={logoImg} 
+              alt="Logo" 
+              fill
+              sizes="36px"
+              className="object-contain"
+            />
+          </div>
           <span className="hidden text-sm font-semibold tracking-tight text-foreground sm:inline">
             {profile.name}
           </span>

@@ -51,7 +51,7 @@ export function TopNav() {
           aria-label="Back to top"
         >
           <span className="flex size-9 items-center justify-center rounded-md bg-primary text-lg font-bold text-primary-foreground">
-            R
+            M
           </span>
           <span className="hidden text-sm font-semibold tracking-tight text-foreground sm:inline">
             {profile.name}

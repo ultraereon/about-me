@@ -36,6 +36,8 @@ export type Project = {
   period: string
   description: string
   tech: string[]
+  github?: string
+  link?: string
 }
 
 export const projects: Project[] = [
@@ -53,6 +55,14 @@ export const projects: Project[] = [
     description:
       "A web app that streamlines and automates print jobs across multiple print locations and branches. Deployed in production at a local print shop in Kanjirappally Town, Kottayam, across two of their locations.",
     tech: ["React", "Tailwind CSS", "Python", "Flask", "Express", "SQLite3"],
+  },
+  {
+    title: "SmartSpense Expense Tracker",
+    period: "2024",
+    description:
+      "A smart expense tracking application designed to help users monitor their finances effectively, categorize expenses, and gain actionable insights into their daily spending habits.",
+    tech: ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    github: "https://github.com/ultraereon/smartspense",
   },
 ]
 

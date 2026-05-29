@@ -113,8 +113,4 @@ export const certifications = [
     title: "Programming Fundamentals using Python",
     issuer: "Infosys Springboard",
   },
-  {
-    title: "The Complete Full-Stack Web Development Bootcamp",
-    issuer: "Dr. Angela Yu — Udemy",
-  },
 ]

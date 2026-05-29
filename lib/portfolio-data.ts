@@ -1,6 +1,6 @@
 export const profile = {
   name: "Mohamed Arif Asharf",
-  title: "Aspiring QA Engineer",
+  title: "QA Engineer",
   tagline: "I build AI-driven and full-stack web experiences.",
   location: "Thiruvananthapuram, Kerala, India",
   email: "arifmohammedashraf@gmail.com",

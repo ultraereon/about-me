@@ -9,7 +9,7 @@ export function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-16 pt-8 md:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-24 lg:pt-12">
         {/* Left: intro */}
         <div className="flex flex-col">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Hey there!</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary">Hey there! I am</p>
 
           <h1 className="mt-4 text-balance text-4xl font-bold uppercase leading-[1.05] tracking-tight text-foreground sm:text-5xl lg:text-6xl">
             {profile.name} <span className="text-primary">//RF</span>

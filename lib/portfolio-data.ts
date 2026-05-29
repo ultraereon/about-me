@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Mohamed Arif Asharf (RF)",
+  name: "Mohamed Arif Asharf",
   title: "Software Developer",
   tagline: "I build AI-driven and full-stack web experiences.",
   location: "Thiruvananthapuram, Kerala, India",

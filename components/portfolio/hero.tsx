@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { ArrowRight, Download, Github, Linkedin, Mail, MapPin } from "lucide-react"
 import { profile, stats } from "@/lib/portfolio-data"
+import profileImg from "@/public/mohamed-arif-asharf.jpg"
 
 export function Hero() {
   return (
@@ -57,7 +58,7 @@ export function Hero() {
               <ArrowRight className="size-4" aria-hidden="true" />
             </a>
             <a
-              href="/Mohamed-Arif-Asharf-Resume.pdf"
+              href={process.env.NODE_ENV === "production" ? "/about-me/Mohamed-Arif-Asharf-Resume.pdf" : "/Mohamed-Arif-Asharf-Resume.pdf"}
               download
               className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary hover:text-primary"
             >
@@ -103,7 +104,7 @@ function ClientPhoto() {
       {/* photo clipped to arch / semi-circle */}
       <div className="relative aspect-[4/5] overflow-hidden rounded-t-full border border-primary/30 bg-secondary">
         <Image
-          src="/mohamed-arif-asharf.jpg"
+          src={profileImg}
           alt="Portrait of Mohamed Arif Asharf"
           fill
           sizes="(max-width: 1024px) 24rem, 28rem"

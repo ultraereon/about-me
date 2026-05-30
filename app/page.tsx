@@ -12,7 +12,7 @@ export default function Page() {
       <TopNav />
       <Hero />
 
-      <main className="mx-auto flex max-w-3xl flex-col gap-20 px-6 pb-24 md:px-12" id="content">
+      <main className="mx-auto flex max-w-3xl flex-col gap-20 px-4 pb-24 sm:px-6 md:px-12" id="content">
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />

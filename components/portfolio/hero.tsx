@@ -7,7 +7,7 @@ import { FadeIn } from "@/components/ui/fade-in"
 export function Hero() {
   return (
     <section className="relative overflow-hidden" aria-label="Introduction">
-      <div className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-16 pt-8 md:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-24 lg:pt-12">
+      <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-16 pt-8 sm:px-6 md:px-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 lg:pb-24 lg:pt-12">
         {/* Left: intro */}
         <div className="flex flex-col">
           <FadeIn delay={0}>
@@ -75,13 +75,13 @@ export function Hero() {
 
           {/* Stats */}
           <FadeIn delay={450}>
-            <dl className="mt-12 grid max-w-md grid-cols-3 gap-3">
+            <dl className="mt-12 grid max-w-md grid-cols-3 gap-2 sm:gap-3">
             {stats.map((stat) => (
-              <div key={stat.label} className="rounded-xl border border-border bg-card p-4 text-center">
+              <div key={stat.label} className="rounded-xl border border-border bg-card p-2 sm:p-4 text-center">
                 <dt className="sr-only">{stat.label}</dt>
                 <dd>
-                  <span className="block text-2xl font-bold text-primary">{stat.value}</span>
-                  <span className="mt-1 block text-xs leading-snug text-muted-foreground">{stat.label}</span>
+                  <span className="block text-lg sm:text-2xl font-bold text-primary">{stat.value}</span>
+                  <span className="mt-1 block text-[10px] sm:text-xs leading-snug text-muted-foreground">{stat.label}</span>
                 </dd>
               </div>
             ))}

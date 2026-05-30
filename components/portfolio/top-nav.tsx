@@ -46,7 +46,7 @@ export function TopNav() {
         scrolled ? "border-b border-border bg-background/85 backdrop-blur-md" : "bg-transparent",
       )}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-12">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 md:px-12">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           className="flex items-center gap-2 outline-none"
@@ -75,7 +75,7 @@ export function TopNav() {
                   <button
                     onClick={() => handleClick(item.id)}
                     className={cn(
-                      "rounded-md px-3 py-2 text-xs font-semibold uppercase tracking-widest transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring sm:text-sm sm:tracking-wide",
+                      "rounded-md px-2 py-1.5 text-xs font-semibold uppercase tracking-wider transition-colors outline-none focus-visible:ring-2 focus-visible:ring-ring sm:px-3 sm:py-2 sm:text-sm sm:tracking-widest",
                       isActive ? "text-primary" : "text-muted-foreground hover:text-foreground",
                     )}
                   >
